@@ -1,15 +1,20 @@
-dicaleatorio={x: x**2 for x in (2, 4, 6)}
+#Funciones con parametros
 
-print(dicaleatorio)
+#se define la funcion
+def raiz(value):
+    return value ** (1/2)
 
-#imprime numeros en reversa
-print("Números en reversa")
+#lee el valor de la raiz cuadrada
+print(f'La raiz cuadrada es: {raiz(4)}')
 
-for i in reversed(range(1, 10, 2)):
-    print(i)
+def validarsiexiste(obj):
+    
+    #lee si obj es verdadero
+    if obj:
+        print(f"{obj} is True")
 
-#borra un elemento del diccionario
-del(calificaciones['Rosa'])
+    #lee si obj es falso    
+    else:
+        print(f"{obj} is False")
 
-for i, j in calificaciones.items():
-    print(i,j)
+validarsiexiste(1)

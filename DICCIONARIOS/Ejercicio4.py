@@ -1,18 +1,21 @@
-#Tecnicas de iterar los diccionarios
+#Definir una funcion
 
-print("Técnicas por clave")
+#se define la funcion 
+def saludar():
+    print("saludo")
 
-for i in calificaciones.keys():
-    print(i)
+#retorna un numero
+def retornarnumero():
+    return 1
 
-print("Iterar por valor")
+saludar()
 
-for j in calificaciones.values():
-    print(j)
+retornarnumero()
 
-nombres = ['Maria', 'Sebastian', 'Ana']
-edades = ['18', '25', '30']
+#lee que numero retorna
+if retornarnumero()==1:
+    print("devolvió un uno")
 
-for n, e in zip(nombres, edades):
-    
-    print('Tú nombre es {0} y tu edad {1}.'.format(n, e))
+#lee cuando no se devuelve ningun numero
+else:
+    print("No devolvió un uno")

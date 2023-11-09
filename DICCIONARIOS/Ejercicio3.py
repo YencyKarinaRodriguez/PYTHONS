@@ -1,24 +1,15 @@
-#Agregar datos al diccionario despues de creado
+dicaleatorio={x: x**2 for x in (2, 4, 6)}
 
-#Tecnicas de iteracion
+print(dicaleatorio)
 
-#lee las calificaciones
-calificaciones1 = {
-'nombre': 'Sandra',
-'notafinal': 5.0
+#imprime numeros en reversa
+print("Numeros en reversa")
 
-}
+for i in reversed(range(1, 10, 2)):
+    print(i)
 
-calificaciones2 = {
-'Sandra': 5.0,
-'Adriana':5.0,
-'Mauricio':4.5,
-'Jose':2.5
+#borra un elemento del diccionario
+del(calificaciones['Rosa'])
 
-}
-
-#se agregan datos al diccionario
-
-calificaciones2.update({"Rosa": 3.7, "German": 4.8})
-for i, j in calificaciones2.items():
+for i, j in calificaciones.items():
     print(i,j)

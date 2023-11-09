@@ -1,14 +1,18 @@
-#Tomé el presente ejercicio, y pasé a la función la lista con los días de la semana restantes
+#Tecnicas de iterar los diccionarios
 
-#aqui se define la funcion
-#week = semana
-def list (dia, week = []):
+print("Técnicas por clave")
 
-    #aqui se agrega el dia digitado
-    week.append(dia)
+for i in calificaciones.keys():
+    print(i)
 
-    #aqui se muestra la lista de la semana
-    print (week)
+print("Iterar por valor")
 
-#aqui se agrega el domingo al dia y a la lista de los otros dias
-list ("Domingo", ["Lunes", "Martes", "Mieercoles", "Jueves", "Viernes", "Sabado"])
+for j in calificaciones.values():
+    print(j)
+
+nombres = ['Maria', 'Sebastian', 'Ana']
+edades = ['18', '25', '30']
+
+for n, e in zip(nombres, edades):
+    
+    print('Tú nombre es {0} y tu edad {1}.'.format(n, e))

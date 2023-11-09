@@ -1,14 +1,24 @@
-#Escriba una función en Python que reproduzca lo siguiente:
-#𝑓(𝑥, 𝑦) = 𝑥2 + 𝑦2 Valor para X=3 y valor para Y=5
+#Agregar datos al diccionario despues de creado
 
-#aqui se define la funcion
-def exercise (x,y):
-    
-    #aqui se escirbe la operacion que pidieron
-    result = x*2 + y*2
-    
-    #aqui se muestra el resultado
-    print (f"\nEl resultado de la operacion es de {x} x 2 + {y} x 2 es: {result}")
+#Tecnicas de iteracion
 
-#aqui se piden los datos para terminar la operacion
-exercise (int(input("Digite el valor de x: ")), int(input("Digite el valor de y: ")))
+#lee las calificaciones
+calificaciones1 = {
+'nombre': 'Sandra',
+'notafinal': 5.0
+
+}
+
+calificaciones2 = {
+'Sandra': 5.0,
+'Adriana':5.0,
+'Mauricio':4.5,
+'Jose':2.5
+
+}
+
+#se agregan datos al diccionario
+
+calificaciones2.update({"Rosa": 3.7, "German": 4.8})
+for i, j in calificaciones2.items():
+    print(i,j)
